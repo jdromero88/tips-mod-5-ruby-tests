@@ -27,6 +27,9 @@ class RecurringMoment
         # end
         current = current.advance(months: @interval)
       elsif @period == 'weekly'
+        # if @interval > 1
+        #   binding.pry
+        # end
         current = current.advance(weeks: @interval)
       elsif @period == 'daily'
         # binding.pry
